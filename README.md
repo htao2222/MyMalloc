@@ -1,3 +1,5 @@
+This program implements a basic version of malloc self designed, providing functionality for mallocing and freeing chunks based on an array.
+
 Our Malloc design used a Header struct as metadata, containing the status of the block whether it was FREE or ALLOCATED, the size of the block,
 and pointers to the next and the previous blocks. Malloc aligned the memory to 8 bytes and searched for the first available free block, once found
 if big enough it would be split, otherwise it would be completely allocated. When Malloc was first called it would check if it needed to be initialized,
